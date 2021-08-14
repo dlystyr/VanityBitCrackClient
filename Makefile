@@ -48,7 +48,7 @@ CXXFLAGS   = -m64 -mssse3 -Wno-write-strings -g -I. -I$(CUDA)/include
 else
 CXXFLAGS   =  -m64 -mssse3 -Wno-write-strings -O2 -I. -I$(CUDA)/include
 endif
-LFLAGS     = -lpthread
+LFLAGS     = -lpthread -lcurl
 endif
 
 
